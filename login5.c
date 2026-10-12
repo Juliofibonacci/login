@@ -1,5 +1,5 @@
-#include<stdio.h>
-#include<string.h>
+#include <stdio.h>
+#include <string.h>
 
 int main()
 {
@@ -14,8 +14,7 @@ int main()
     printf("***************** SISTEMA DE LOGIN ***************************\n");
     printf("**************************************************************\n\n");
 
-    
-    while(i<3)
+    while (i < 3)
     {
 
         printf("\n\nDigite o seu nome de usuario: ");
@@ -24,24 +23,24 @@ int main()
         printf("\n\nDigite a sua senha: ");
         scanf("%d", &senhaDigitada);
 
-        i = i+1;
-        n = 3-i;
+        i = i + 1;
+        n = 3 - i;
 
-        if(strcmp(usuario, usuarioDigitado) != 0 || (senha != senhaDigitada) )
+        if (strcmp(usuario, usuarioDigitado) != 0 || (senha != senhaDigitada))
         {
-            if(n>1)
+            if (n > 1)
             {
                 printf("\n\nUsuario ou senha incorretos!");
                 printf("\n\nVoce tem mais %d tentativas.", n);
             }
 
-            if(n==1)
+            if (n == 1)
             {
                 printf("\n\nUsuario ou senha incorretos!");
                 printf("\n\nVoce tem mais %d tentativa.", n);
             }
 
-            if(n==0)
+            if (n == 0)
             {
                 printf("\n\nUsuario ou senha incorretos!");
                 printf("\n\nSuas tentativas esgotaram!\n\n");
@@ -56,6 +55,9 @@ int main()
             break;
         }
 
+        printf("\n\n**************************************************************\n");
+        printf("***************** SISTEMA DE LOGIN ***************************\n");
+        printf("**************************************************************\n\n");
     }
 
     return 0;
